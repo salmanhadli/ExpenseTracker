@@ -43,7 +43,7 @@ export default ({ onCancel, onSubmit, submitButtonLabel, initalValues }) => {
 
   function submitHandler() {
     const expenseData = {
-      amount: parseInt(inputs.amount.value),
+      amount: inputs.amount.value,
       date: new Date(inputs.date.value),
       description: inputs.description.value.trim(),
     };

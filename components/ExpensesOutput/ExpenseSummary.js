@@ -3,7 +3,7 @@ import { GlobalStyles } from "../../constants/styles";
 
 export default ({ expenses, periodName }) => {
   const expenseSum = expenses.reduce((sum, expense) => {
-    return sum + expense.amount;
+    return sum + Number(expense.amount);
   }, 0);
   return (
     <View style={styles.container}>
